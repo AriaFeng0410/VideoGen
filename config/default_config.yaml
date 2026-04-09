@@ -1,0 +1,40 @@
+# 视频号视频生成默认配置
+
+# TTS配音配置
+tts:
+  voice: "zh-CN-XiaoxiaoNeural"  # 女声温柔
+  rate: "+0%"                    # 语速: -50% 到 +100%
+  volume: "+0%"                  # 音量
+
+# 文本分割配置
+text_split:
+  max_segment_length: 50         # 单片段最大字符数
+
+# 字幕配置
+subtitle:
+  format: "ass"
+  style:
+    font_name: "Source Han Sans CN Bold"
+    font_size: 36
+    primary_color: "&H00FFFFFF"    # 白色
+    outline_color: "&H00000000"    # 黑色描边
+    outline: 2
+    shadow: 1
+    margin_vertical: 80            # 底部边距
+    alignment: 2                   # 底部居中
+
+# 图片处理配置
+image:
+  scale_mode: "fit"              # fit=保持比例居中
+  background_color: [0, 0, 0]    # 黑色背景
+
+# 视频配置
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  codec: "libx264"
+  preset: "medium"
+  crf: 23
+  audio_codec: "aac"
+  audio_bitrate: "192k"
