@@ -1,0 +1,22 @@
+# 项目配置示例
+# 使用方式: python main.py -p input/project.yaml
+
+# 项目信息
+project:
+  name: "AI科技主题视频"
+  description: "演示视频生成工作流"
+
+# 输入素材
+inputs:
+  text_file: "text/demo.txt"
+  images_dir: "images"
+
+# 输出配置
+output:
+  filename: "../output/demo_video.mp4"
+
+# 自定义配置（覆盖默认配置）
+overrides:
+  tts:
+    voice: "zh-CN-XiaoxiaoNeural"
+    rate: "+0%"
